@@ -1,5 +1,5 @@
 # Test2
-This is test 2 realted work 
+This is test 2 related work 
 
 # Question 1
 Create code that allows you to create an ordered list of tokens. This code should take in a file as input and process that file for the following lexemes:
