@@ -31,6 +31,7 @@ Create code that allows you to create an ordered list of tokens. This code shoul
 – Close Function parameter
 – Open Array index parameter – Close Array index parameter
 
+
 You may choose what ever symbol you represent for the special symbol but this must be explained in the comments with operation represents which symbol. Every type of lexeme defined must have a unique token equivalence. In this language every literal must be followed by white space or a special symbol to mark its end.
 
 # Question 2
