@@ -1,0 +1,26 @@
+Name and structure are the number one function of the compilation process in such environments. 
+If a scope is added, the compilation process gives it a name and places it in a tree-like structure, and If R attempts to connect a value to a symbol, it looks for the correct value in a number of environments. 
+The order in which things take place is approximately the value of an R object while you are on the command line.
+
+1)	Search for a symbol's name that matches the requested global environment (i.e., your workspace).
+2)	Search each paquet on the search list with its namespaces
+You can find the search list with the search() function.
+
+> search()
+[1] ".GlobalEnv"        "package:stats"     "package:graphics" 
+[4] "package:grDevices" "package:utils"     "package:datasets" 
+[7] "package:methods"   "Autoloads"         "package:base" 
+
+The global environment is the first variable in the search list, and the base package is always the last. The order of packages on the search list matters for better or worse, especially if there are many items in different packages with the same name.
+
+Users can set the packages are downloaded on boot, so you won't be able to presume that a setlist of packages available would be available in the specified order if you write a feature (or a package). The namespace for that package is placed at position 2 of the search list (default) when the user loads a packet with librarian(), and everything else will be moved down the list.
+
+The scoping rules for R differ from the original S language by their key feature (in case you care about that). This may seem an esoteric trait of R, but it is one of its most fascinating and helpful characteristics.
+
+The size rules specify how a value in a function is linked to a free variable. R uses lexical spread or static spreading. Dynamic scoping, implemented by many languages, is an alternative to lexical scoping. Lexical scope is particularly useful for the simplification of statistical calculations.
+
+The scope rules relate to how R uses the search list to attach a symbol with the meaning.
+
+> f <- function(x, y) {
++         x^2 + y / z
++ }
