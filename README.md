@@ -4,10 +4,33 @@ Test 2 Work
 # Question 1
 Create code that allows you to create an ordered list of tokens. This code should take in a file as input and process that file for the following lexemes:
 
-#
-Perl Style Identifiers that uses Dart style accessibility with the second character instead of the first – Scalar Variables
+• Perl Style Identifiers that uses Dart style accessibility with the second character instead of the first – Scalar Variables
 – Arrays
 – Hash Maps
+• Literals:
+– Java-Style string literals
+– C-Style integer literals
+– C-Style character literals
+– C-Style floating point literals
+• Type Declarations: – String
+– Integer
+– Character – Float
+– Void
+• Non-Alphanumeric special symbols that denote ( at least two of which must be more than two characters ):
+– Addition
+– Assignment
+– Subtraction
+– Division
+– Multiplication
+– Modulo Operator
+– Logical And
+– Logical Or
+– Logical Not
+– Open Code Block
+– Close Code Block
+– Open Function parameter
+– Close Function parameter
+– Open Array index parameter – Close Array index parameter
 
 You may choose what ever symbol you represent for the special symbol but this must be explained in the comments with operation represents which symbol. Every type of lexeme defined must have a unique token equivalence. In this language every literal must be followed by white space or a special symbol to mark its end.
 
