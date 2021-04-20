@@ -55,3 +55,4 @@ Given the natural constraints of an RDA explain how you would go about the creat
 
 # Question 8
 Write a JavaScript and Python script that has subprograms nested three deep and in which each nested subprogram references variables defined in all of its enclosing subprograms and also has variables used to hide at least 1 variable from a non-local function.
+
