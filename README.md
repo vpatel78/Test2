@@ -33,7 +33,6 @@ Create code that allows you to create an ordered list of tokens. This code shoul
 
 You may choose what ever symbol you represent for the special symbol but this must be explained in the comments with operation represents which symbol. Every type of lexeme defined must have a unique token equivalence. In this language every literal must be followed by white space or a special symbol to mark its end.
 
-
 # Question 2
 Write a C program that does a large number of references to elements of two-dimensioned arrays, using only subscripting. Write a second program that does the same operations but uses pointers and pointer arithmetic for the storage-mapping function to do the array references. Compare the time efficiency of the two programs. Which of the two programs is likely to be more reliable? Why?
 
