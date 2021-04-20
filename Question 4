@@ -11,13 +11,19 @@ You can find the search list with the search() function.
 [4] "package:grDevices" "package:utils"     "package:datasets" 
 [7] "package:methods"   "Autoloads"         "package:base" 
 
-The global environment is the first variable in the search list, and the base package is always the last. The order of packages on the search list matters for better or worse, especially if there are many items in different packages with the same name.
+The global environment is the first variable in the search list, and the base package is always the last. 
+The order of packages on the search list matters for better or worse, especially if there are many items in different packages with the same name.
 
-Users can set the packages are downloaded on boot, so you won't be able to presume that a setlist of packages available would be available in the specified order if you write a feature (or a package). The namespace for that package is placed at position 2 of the search list (default) when the user loads a packet with librarian(), and everything else will be moved down the list.
+Users can set the packages are downloaded on boot, so you won't be able to presume that a setlist of packages 
+available would be available in the specified order if you write a feature (or a package).
+The namespace for that package is placed at position 2 of the search list (default) when the user loads a packet with librarian(), and everything else will be moved down the list.
 
-The scoping rules for R differ from the original S language by their key feature (in case you care about that). This may seem an esoteric trait of R, but it is one of its most fascinating and helpful characteristics.
+The scoping rules for R differ from the original S language by their key feature (in case you care about that). 
+This may seem an esoteric trait of R, but it is one of its most fascinating and helpful characteristics.
 
-The size rules specify how a value in a function is linked to a free variable. R uses lexical spread or static spreading. Dynamic scoping, implemented by many languages, is an alternative to lexical scoping. Lexical scope is particularly useful for the simplification of statistical calculations.
+The size rules specify how a value in a function is linked to a free variable. 
+R uses lexical spread or static spreading. Dynamic scoping, implemented by many languages, is an alternative to lexical scoping. 
+Lexical scope is particularly useful for the simplification of statistical calculations.
 
 The scope rules relate to how R uses the search list to attach a symbol with the meaning.
 
