@@ -4,8 +4,7 @@
 void subscript();
 void pointers();
 
-int main()
-{
+int main() {
   
 clock_t start, end;
 clock_t start1, end1;
