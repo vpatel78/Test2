@@ -1,4 +1,4 @@
-
+#!/usr/bin/perl
 # this is character which are going to use for random naming 
 my @chars = ("D".."J"); 
 # We are declaring the hash 
