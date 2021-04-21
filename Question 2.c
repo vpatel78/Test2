@@ -17,51 +17,57 @@ for(int i=0; i<100; i++){
     subscript();   
 }
   
-// closing the cpu clock.
+// we are here ending the cpu clock 
 end = clock();
-  
+
+// printing the time taken with subscript to get our subscript time
 printf("Time taken with subscript: %ld\n", (end - start));
   
-// starting the cpu clock
+// we are here starting the cpu clock 
 start1 = clock();
   
 for(int i=0; i< 100;  i++){
+    //checking pointers
     pointers();
 }
   
-// closing the cpu clock.
+// clsoing the ending clock 
 end1 = clock();
  
+ // printing the time taken with pointers to get our pointers time
 printf("Time taken with pointers: %ld\n", (end1 - start1));
-
+    //returning the result
     return 0;
 }
 
-// function to reference the 2D array through subscripts.
-void subscript(){ //assuming that the usage of
+// functioning the 2D array with my subscripts and we are checking our running time
+void subscript(){
 
-int arr[10][10] = {0}; //square matrice is not mandatory
+int arr[10][10] = {0}; 
 
 for(int j=0; j<10 ; j++){
     for(int i=0; i<10; i++){
-        arr[i][j]; //no operation is done, only accessing the element
+        // There is no procedure performed; only the variable is accessed.
+        arr[i][j]; 
     }
 }
 
 }
 
-// function to reference the 2D array through pointers.
-void pointers() { //assuming that the usage of
+// functioning the 2D array with my pointers and we are checking our running time
+void pointers() { 
 
-int arr[10][10] = {0}; //square matrice is not mandatory
+int arr[10][10] = {0};
 
     for(int j=0; j<10 ; j++){
         for(int i=0; i<10; i++){
-            *(*(arr+i)+j); //no operation is done, only accessing the element
+            //Only the variable is accessed; no operation is performed.
+            *(*(arr+i)+j); 
         }
     }
 
 }
+
 
 // The one with subscript is likely to be reliable becasue of the not wrorrying about the referceicing and derefecring like in the pointers.
 
