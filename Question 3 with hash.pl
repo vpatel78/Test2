@@ -6,7 +6,7 @@ my %data;
 # this is my starting time where it run 
 my $st = time;
 #We are here entering the name and the ages for the 10 times
-for( $i= 0; $i < 10; $i = $i + 1 ){ 
+for( $x= 0; $x < 10; $x = $x + 1 ){ 
     
     # here our variables are storing name 
     my $name;   
