@@ -65,3 +65,7 @@ my $dur = time - $st;
 
 #here my excution time will display 
 print "Execution time: $dur s\n"; #display the total execution time
+
+# After looking both hash and without hash program, both are readability and both are easy to understood and easy to write the program.
+# but after running both program, with hash program are very efficiency because of here we are not duplcating name, so the execution time is very fast to get, where in the without hash, the program execution time tkaing very long since we are here duplcating the names. 
+
