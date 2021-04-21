@@ -1,30 +1,67 @@
-my @chars = ("A".."Z"); #list of characters used for naming
-my @data;   #declare an array
-my $st = time;    #note the starting time
-for( $a = 0; $a < 5; $a = $a + 1 ){ #enter name and age for 5 times
-    my $name;   #variable to store name
-    my $age;    #variable to store age
-    $name .= $chars[rand @chars] for 1..3; #generate a random 3 letter name
+#!/usr/bin/perl
+# this is character which are going to use for random naming 
+my @chars = ("D".."J");
+
+# We are declaring an array 
+my @data;
+
+# this is my starting time where it run 
+my $st = time;
+
+#We are here entering the name and the ages for the 10 times
+for( $x = 0; $x < 10; $x = $x + 1 ){
+    
+    # here our variables are storing name 
+    my $name;  
+    
+    # here our variables are storing ages
+    my $age;  
+    
+    #we are generating a random any 3 letter of the name, we are generating 3 letter becasue question asked for 3 characters
+    $name .= $chars[rand @chars] for 1..3;
+    
+    # printing the name
     print $name;
     print " ";
-    $age=int(rand(100));    #generate a random age between 1 to 100
-    print $age;
     
+    # we are generating any random age between 1 to 50
+    $age=int(rand(50));
+    
+    # printing age
+    print $age;
     print "\n";
-    $duplicate=0;   #flag to check duplicate name
-    for($i=0;$i<$a;$i++){
-        if($data[$i][0]==$name){    #check if generated name exits in array or not
-            $duplicate=1;   #duplicate name is found
+    
+    # we are here checking the duplciate name
+    $duplicate=0;  
+    for($i=0;$i<$x;$i++){
+        
+        #checking if the array gernnating the name still keep going or not 
+        if($data[$i][0]==$name){ 
+            
+            # if we found any duplciate related name
+            $duplicate=1;
             break;
         }
     }
-    if($duplicate==0){ #if duplicate name is not found
-        $data[$a][0] = $name;   #add the name to array
-        $data[$a][1] = $age;    #add the age to array
-    }else{ #if duplicate name is found
-        $a=$a-1;
+    
+    # or here if my duplicate name are not found 
+    if($duplicate==0){ 
+        
+        # we are adding name to the array in my data
+        $data[$x][0] = $name;
+        
+        # we are adding age to the array in my data
+        $data[$x][1] = $age;
+        
+        # if my duplicate name not found in the array 
+    }else{
+        
+        $x=$x-1;
     }
 }
 
-my $dur = time - $st;   #calculate total execution time
+# here we are calculating the total execution time
+my $dur = time - $st;
+
+#here my excution time will display 
 print "Execution time: $dur s\n"; #display the total execution time
