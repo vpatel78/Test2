@@ -1,0 +1,3 @@
+Due to the inherent limitations of an RDA, it's critical to identify the requirements before deciding which condition statement to use. 
+When we need a certain step to be taken whether or not a criterion is fulfilled, a while loop is optimal. 
+The Java example below shows a while loop that prints integer numbers in a loop as long as they are below 15 characters long.
