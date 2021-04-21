@@ -1,19 +1,35 @@
-my @chars = ("A".."Z"); #list of characters used for naming
-my %data;   #declare a hash
-my $st = time;   #note the starting time
-for( $a = 0; $a <5; $a = $a + 1 ){ #enter name and age for 5 times
-    my $name;   #variable to store name
-    my $age;    #variable to store age
-    $name .= $chars[rand @chars] for 1..3; #generate a random 3 letter name
+
+# this is character which are going to use for random naming 
+my @chars = ("D".."J"); 
+# We are declaring the hash 
+my %data; 
+# this is my starting time where it run 
+my $st = time;
+#We are here entering the name and the ages for the 10 times
+for( $i= 0; $i < 10; $i = $i + 1 ){ 
+    
+    # here our variables are storing name 
+    my $name;   
+    # here our variables are storing ages
+    my $age;   
+    
+    #we are generating a random any 3 letter of the name, we are generating 3 letter becasue question asked for 3 characters
+    $name .= $chars[rand @chars] for 1..3; 
+    #printing name 
     print $name;
     print " ";
-    $age=int(rand(100));    #generate a random age between 1 to 100
+    #we are generating any random age between 1 to 50
+    $age=int(rand(50));   
+    # priting our random ages
     print $age;
-    
     print "\n";
 
-    $data{$name} = $age;    #add the name and age to hash (duplicates will not be added)
+    # i think we are not adding duplicating here. So i jsut added name and the ages to the hash
+    $data{$name} = $age;
 }
 
-my $dur = time - $st;   #calculate total execution time
-print "Execution time: $dur s\n"; #display the total execution time
+# here we are calculating the total execution time
+my $dur = time - $st; 
+
+#here my excution time will display 
+print "Execution time: $dur s\n";
