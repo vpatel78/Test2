@@ -1,3 +1,72 @@
 Due to the inherent limitations of an RDA, it's critical to identify the requirements before deciding which condition statement to use. 
 When we need a certain step to be taken whether or not a criterion is fulfilled, a while loop is optimal. 
 The Java example below shows a while loop that prints integer numbers in a loop as long as they are below 15 characters long.
+
+For example: while loop
+public class main {
+  public static void main(String[] args {
+  int x = 0;
+    while (x < 15) {
+      system.out.println (x);
+         x++;
+         }
+    }
+}
+
+For example: if loop
+public class main {
+   public static void main(String[] args {
+   int x = 0;
+    if (x < 15) {
+        system.out.println(" x is less than 15");
+        }
+        else {
+        system.out.println (" x is overlimit");
+        }
+   }
+}
+
+
+OR 
+
+RDAs with significant logic or objective RDAs have been submitted: 
+1. Preparing and securing food sources for future generations 
+
+To begin, function, voice, manifesting, and the agent are all defined as entities:
+private static final IRI Work = rdacVocab.term("Work");
+private static final IRI Expression = rdacVocab.term("Expression");
+private static final IRI Manifestation = rdacVocab.term("Manifestation");
+private static final IRI Item = rdacVocab.term("Item");
+private static final IRI Agent = rdacVocab.term("Agent");
+private static final IRI Person = rdacVocab.term("Person");
+private static final IRI CorporateBody = rdacVocab.term("CorporateBody");
+private static final IRI Family = rdacVocab.term("Family");
+private static final IRI Concept = skosVocab.term("Concept");
+private static final IRI Instant = timeVocab.term("Instant");
+
+
+Then, all links to be tested have to be defined:
+// DC model
+private static final IRI identifier = dcVocab.term("identifier");
+
+// Expression model
+private static final IRI languageOfExpression = rdaeVocab.term("languageOfExpression");
+private static final IRI workExpressed = rdaeVocab.term("workExpressed");
+private static final IRI manifestationOfExpression = rdaeVocab.term("manifestationOfExpression");
+private static final IRI contributor = rdaeVocab.term("contributor");
+private static final IRI translator = rdaeVocab.term("translator");
+private static final IRI illustrator = rdaeVocab.term("illustrator");
+private static final IRI imitationOfExpression = rdaeVocab.term("imitationOfExpression");
+private static final IRI abridgementOfExpression = rdaeVocab.term("abridgementOfExpression");
+
+
+Finally, the limitation of domain and cardinality is defined:
+
+System.out.println("(1) Domain-Range constraints: Carrier type ");
+
+Constraint aDomainConstraint = ConstraintFactory.constraint(domain(carrierType, Manifestation));
+Constraint aRangeConstraint = ConstraintFactory.constraint(range(carrierType, Concept));
+
+addConstraint(aValidator, aDomainConstraint, aRangeConstraint);
+
+
