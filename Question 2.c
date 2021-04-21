@@ -62,3 +62,6 @@ int arr[10][10] = {0}; //square matrice is not mandatory
     }
 
 }
+
+// The one with subscript is likely to be reliable becasue of the not wrorrying about the referceicing and derefecring like in the pointers.
+
