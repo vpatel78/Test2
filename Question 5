@@ -11,9 +11,6 @@ When these tokens are formed, Lexical Analyzer skips spaces and comments.
 If any mistake is present, this is correlated with the source file and line name by Lexical Analyzer. 
 Input characters are read, and tokens are generated as the principal task of lexical analysis.
 
-The whole source code of the software is scan by a lexical analyzer. Each token is identified one by one. 
-Typically scanners are only used when requested from a parser to generate tokens. This is how it functions.
-
 Lexical Analysis Example, Tokens, Non Tokens
 Consider the code given to the Lexical Analyzer
 
